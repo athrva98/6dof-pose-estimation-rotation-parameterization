@@ -1,0 +1,8 @@
+INSTRUCTIONS FOR TRAINING THE MODELS
+
+1 Download the Google Scanned Objects Dataset from the github repository at,
+        https://github.com/liuyuan-pal/Gen6D
+2 Set the appropriate dataset path in "dataloader.py"
+3 run train.py # this will create the necessary folders and start training
+4 The model.py file contains the model that we are using. It also contains the rotation head, please see the _type parameter and match this accross the loss function during traning. By default _type = 0 which corresponds to closes SO(3) martix parameterization with loss defined in the LOSS_FUNCTIONS class in loss.py under loss_RotMat12 function.
+   
